@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Local data and generated artifacts
+data/
+outputs/
+PBS data/
+Exp data/
+*.pkl
+*.joblib
+*.csv
+*.log
+*.tiff
+*.png
+*.pdf
+*.pptx
