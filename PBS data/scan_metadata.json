@@ -1,0 +1,77 @@
+{
+  "parameter_file": "/home/peiheng/Pybamm4NMC/parameterset/set2.json",
+  "pm_variation_list": [
+    "Initial SEI thickness [m]",
+    "SEI solvent diffusivity [m2.s-1]",
+    "Lithium plating kinetic rate constant [m.s-1]",
+    "Dead lithium decay constant [s-1]",
+    "Negative electrode critical stress [Pa]",
+    "Negative electrode LAM constant proportional term [s-1]"
+  ],
+  "variation_ranges": {
+    "Initial SEI thickness [m]": [
+      1.0,
+      2.0
+    ],
+    "SEI solvent diffusivity [m2.s-1]": [
+      5.0,
+      30.0
+    ],
+    "Lithium plating kinetic rate constant [m.s-1]": [
+      5.0,
+      50.0
+    ],
+    "Dead lithium decay constant [s-1]": [
+      5.0,
+      50.0
+    ],
+    "Negative electrode critical stress [Pa]": [
+      0.8,
+      1.2
+    ],
+    "Negative electrode LAM constant proportional term [s-1]": [
+      1.0,
+      3.0
+    ]
+  },
+  "target_successes": 400,
+  "experiment_cycles": 1500,
+  "dq_reference_cycle": 10,
+  "dq_target_cycle": 50,
+  "n_dq_points": 200,
+  "voltage_window": [
+    2.5,
+    4.2
+  ],
+  "soh_reference": "PyBaMM summary variable Capacity [A.h] normalized by first cycle",
+  "soh_thresholds": [
+    99,
+    98,
+    97,
+    96,
+    95,
+    94,
+    93,
+    92,
+    91,
+    90,
+    89,
+    88,
+    87,
+    86,
+    85,
+    84,
+    83,
+    82,
+    81,
+    80
+  ],
+  "sampling": "lhs",
+  "seed": 123,
+  "workers": 8,
+  "batch_size": 8,
+  "lhs_base_points_consumed": 408,
+  "summary_csv": "/home/peiheng/Pybamm4NMC/generated_pybamm_data/set2/scan_summary.csv",
+  "cycle_detail_dir": "/home/peiheng/Pybamm4NMC/generated_pybamm_data/set2/cycle_qv_csv",
+  "life_detail_dir": "/home/peiheng/Pybamm4NMC/generated_pybamm_data/set2/life_soh_csv"
+}

@@ -9,13 +9,8 @@ venv/
 env/
 
 # Local data and generated artifacts
-data/
-outputs/
-PBS data/
-Exp data/
 *.pkl
 *.joblib
-*.csv
 *.log
 *.tiff
 *.png
