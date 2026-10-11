@@ -62,15 +62,12 @@ PM_VARIATION_LIST = [
 VARIATION_RANGES = {
     "Initial SEI thickness [m]": (0.25, 1.0),
     "SEI solvent diffusivity [m2.s-1]": (5, 30),
-    # "SEI resistivity [Ohm.m]": (1.0, 5.0),
 
     "Lithium plating kinetic rate constant [m.s-1]": (5, 50),
-    "Dead lithium decay constant [s-1]": (5, 100),
+    "Dead lithium decay constant [s-1]": (5, 50),
 
     "Negative electrode critical stress [Pa]": (0.8, 1.2),
-    # "Negative electrode LAM constant exponential term": (0.9, 1.1),
-    "Negative electrode reaction-driven LAM factor [m3.mol-1]": (0.5, 5),
-    "Negative electrode LAM constant proportional term [s-1]": (1.0, 2.5),
+    "Negative electrode LAM constant proportional term [s-1]": (1.0, 3.0),
 }
 
 def find_repo_root(start: Path) -> Path | None:
